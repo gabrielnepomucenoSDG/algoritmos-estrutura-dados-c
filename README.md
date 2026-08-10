@@ -1,49 +1,35 @@
-# Algoritmos e Estrutura de Dados em C
+# Algoritmos e Estrutura de Dados em C e Python 🖥️
 
-Exercícios e implementações desenvolvidos durante a disciplina de Estrutura de Dados / LPE (Lógica de Programação e Estrutura), cobrindo desde fundamentos de C até estruturas de dados clássicas.
+Este repositório contém uma coleção de exercícios e implementações práticas desenvolvidos durante a disciplina de Estrutura de Dados / LPE (Lógica de Programação e Estrutura). O foco principal é a compreensão profunda do gerenciamento de memória, manipulação de ponteiros em C e construção de algoritmos clássicos.
 
-## Conteúdo
+## 📂 Estrutura do Repositório
 
 ### `estrutura-de-dados/`
-- **`ordenacao/`** — algoritmos de ordenação (Bucket Sort, Merge Sort) em Python.
-- **`pilha/`** — implementação de pilha (stack) em C.
-- **`ponteiros-brinks/`** — exercícios de ponteiros: alocação dinâmica, referência, struct via ponteiro.
-- **`revisao-estrutura/`** — revisão de alocação dinâmica, modularização e ponteiros.
-- **`revisao-c/`** — exercícios gerais de revisão de C.
 
-### `fundamentos-c-lpe/`
-Exercícios organizados por aula, cobrindo a progressão da disciplina:
+- **`ordenacao/`**: Implementação de algoritmos clássicos de ordenação, como *Bucket Sort* e *Merge Sort* (em Python). Essencial para estudos de complexidade de tempo (Big O).
+- **`pilha/`**: Implementação do zero da estrutura de dados de Pilha (Stack - LIFO) na linguagem C.
+- **`ponteiros-brinks/`**: Laboratório prático focado em ponteiros em C:
+  - Alocação dinâmica de memória (`malloc`, `free`).
+  - Passagem de parâmetros por referência.
+  - Manipulação de `structs` através de ponteiros.
+- **`revisao-estrutura/`**: Exercícios de revisão abrangendo modularização de código (separação em `.h` e `.c`), alocação dinâmica e boas práticas na linguagem C.
 
-| Aula | Tópico |
-|---|---|
-| 2 | Entrada/saída e tipos de variável |
-| 3 | Operadores |
-| 4 | Condicionais (if/else) |
-| 5 | Condicionais (operador ternário e switch/case) |
-| 6 | Laço `while` |
-| 7 | Laço `for` |
-| 8 | Laço `do-while` |
-| 9 | Arrays |
-| 10 | Structs |
-| 11 | Modularização |
+## 🛠️ Tecnologias Envolvidas
 
-- **`provas-e-revisoes/`** — questões discursivas de prova e simulados.
+- **C**: Foco em baixo nível, manipulação de memória e ponteiros.
+- **Python**: Utilizado para modelagem conceitual rápida de algoritmos de ordenação.
 
-## Compilando
+## 🚀 Como testar (Programas em C)
 
-Os arquivos `.c` são independentes entre si. Para compilar qualquer um:
+Para compilar e executar qualquer um dos códigos em C, utilize o compilador `gcc`:
 
 ```bash
-gcc caminho/para/arquivo.c -o programa
-./programa
+# Exemplo de compilação
+gcc nome_do_arquivo.c -o programa_executavel
+
+# Execução no Linux/Mac
+./programa_executavel
+
+# Execução no Windows
+programa_executavel.exe
 ```
-
-Os scripts de ordenação em Python rodam diretamente:
-
-```bash
-python estrutura-de-dados/ordenacao/merge_sort.py
-```
-
-## Contexto
-
-Repositório organizado a partir de material de estudo acumulado ao longo da disciplina — inclui exercícios de aula, desafios e revisões para prova. Binários gerados na compilação (`.exe`, `output/`) não são versionados (ver `.gitignore`).
