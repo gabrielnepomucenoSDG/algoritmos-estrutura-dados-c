@@ -1,0 +1,14 @@
+# Binários gerados pelo compilador
+*.exe
+*.o
+*.obj
+*.out
+output/
+build/
+
+# Editor
+.vscode/
+
+# SO
+Thumbs.db
+.DS_Store
